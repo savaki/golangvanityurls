@@ -14,7 +14,7 @@ Install [up](https://github.com/apex/up).  The simplest method is:
 curl -sf https://up.apex.sh/install | sh
 ```
 
-Register your customer domain using [Route 53](https://aws.amazon.com/route53/).
+Register your custom domain using [Route 53](https://aws.amazon.com/route53/).
 
 Edit `vanity.yml` and add your custom repos. For example, to use the custom domain, 
 `example.com`, to host the `swag` package, I would write: 
