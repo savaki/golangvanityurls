@@ -1,0 +1,7 @@
+host: go.opencensus.io
+cache_max_age: 3600
+paths:
+  /foo:
+    repo: https://github.com/foo/foo
+  /:
+    repo: https://github.com/census-instrumentation/opencensus-go

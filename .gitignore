@@ -1,0 +1,14 @@
+# ignore intellij files
+#
+.idea
+*.iml
+*.ipr
+*.iws
+
+# ignore generated files
+#
+go.sum
+gin-bin
+main
+golangvanityurls
+
