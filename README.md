@@ -8,18 +8,16 @@ and adapts it to work with AWS API Gateway.
 
 ### Quickstart
 
-* Install [up](https://github.com/apex/up).  The simplest method is:
+Install [up](https://github.com/apex/up).  The simplest method is:
 
 ```bash
 curl -sf https://up.apex.sh/install | sh
 ```
 
-* Register your customer domain using [Route 53](https://aws.amazon.com/route53/)
+Register your customer domain using [Route 53](https://aws.amazon.com/route53/).
 
-* Edit `vanity.yml` and add your custom repos.
-
-For example, to use the custom domain, `example.com`, to host the `swag` package, I
-would write: 
+Edit `vanity.yml` and add your custom repos. For example, to use the custom domain, 
+`example.com`, to host the `swag` package, I would write: 
 
 ```yaml
 host: example.com
@@ -28,25 +26,22 @@ paths:
     repo: https://github.com/savaki/swag
 ```
 
-* Deploy the app:
+Deploy the app using `up`:
 
 ```bash
 up
 ```
 
-* Generate a custom TLS certificate using [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)
+Generate a custom TLS certificate using [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/).
 
-* Create a CloudFront distribution for your app.
-
-To get the URL to point to, type:
+Create a CloudFront distribution for your app.  Use the certificate you create via the AWS Certificate Manager 
+to secure the site. To get the URL to point to, type:
 
 ```bash
 up url
 ```
 
-Use the certificate you create via the AWS Certificate Manager to secure the site.
-
-* That's it!  You can use `go get` to get the packages from your custom domain.
+That's it!  You can use `go get` to get the packages from your custom domain.
 
 
 ## Configuration File
