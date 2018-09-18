@@ -34,7 +34,7 @@ up
 
 Generate a custom TLS certificate using [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/).
 
-Create a CloudFront distribution for your app.  Use the certificate you create via the AWS Certificate Manager 
+Create a [CloudFront](https://aws.amazon.com/cloudfront/) distribution for your app.  Use the certificate you create via the AWS Certificate Manager 
 to secure the site. To get the URL to point to, type:
 
 ```bash
