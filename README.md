@@ -66,7 +66,7 @@ paths:
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><code>cache_max_age</code></th>
+      <th scope="row"><code>max_age</code></th>
       <td>optional</td>
       <td>The amount of time to cache package pages in seconds.  Controls the <code>max-age</code> directive sent in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control"><code>Cache-Control</code></a> HTTP header.</td>
     </tr>
